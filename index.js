@@ -1,7 +1,7 @@
 class Formatter {
   //add static methods here
   static capitalize(str) {
-    return str.at(0).toUpperCase() + str.slice(1)
+    return str.charAt(0).toUpperCase() + str.slice(1)
   }
   static sanitize(str) {
     return str.replaceAll(/[^a-zA-Z0-9\s'-]+/g, '')
